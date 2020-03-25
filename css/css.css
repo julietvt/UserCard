@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --e3: #fff;
+    --user-im-size: 180px;
+    --user-im-border: 2px;
+}
+
+.userCard{
+    margin-top: 25px;
+    width: 300px;
+    height: 480px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    background-color: var(--e3);
+    flex-basis: 300px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+header{
+    filter: blur(3px);
+    background-image: url("https://lh3.googleusercontent.com/proxy/Po3IAf1quqHQ0WBPUcGFWBm497CvB13e-ejvVCy2chAncONZdGiIi8HJMAWboCADCsPE1TcaQ8_OnWuhnzJU8_d6brEE2aXkfxcGR0flky4ZCPBG9P4W4T54FrEjPO5qjowNXA6RNkjzgzPvQg");
+    height: 150px;
+    max-width: 350px;
+    min-width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index:0;
+}
+
+.userAva{
+    border: 5px solid var(--e3);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -30%;
+    position: relative;
+    z-index: 1;
+}
+
+.userAva > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit ;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px 20px;
+}
+
+footer{
+
+}
+
+.cardInfo > h1, h3{
+    font-weight: inherit;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cardInfo > h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 42px;
+}
+.cardInfo > h3{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:22px;
+}
+
+.contact{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.contact > img{
+    width: 100%;
+    height: 100T%;
+}
+
+.contact + .contact {
+    margin-left: 15px;
+}
+
+.flexCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
